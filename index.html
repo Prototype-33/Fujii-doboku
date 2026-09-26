@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>株式会社藤井土木｜東京都江戸川区一之江｜解体工事・とび土工</title>
+  <meta name="description" content="東京都江戸川区一之江の株式会社藤井土木。解体工事・とび土工のご相談を承ります。建替え前の解体や現地確認についてもお気軽にご相談ください。">
+  <meta name="theme-color" content="#0f1720">
+  <style>
+    :root{
+      --bg:#0f1720; --panel:#151f29; --panel2:#1b2732; --text:#f4f6f7;
+      --muted:#a9b4bd; --line:#2d3a45; --accent:#d7b36a; --paper:#f4f1ea; --ink:#151b20;
+      --max:1120px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;background:var(--bg);color:var(--text);line-height:1.75}
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:auto;padding:0 24px}
+    .nav{position:sticky;top:0;z-index:20;background:rgba(15,23,32,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+    .navin{height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;letter-spacing:.05em}
+    .mark{width:30px;height:30px;border:1px solid var(--accent);transform:rotate(45deg);display:grid;place-items:center}
+    .mark:after{content:"";width:10px;height:10px;background:var(--accent)}
+    .links{display:flex;align-items:center;gap:22px;font-size:14px;color:var(--muted)}
+    .links a{text-decoration:none}
+    .tel{padding:10px 16px;border:1px solid var(--accent);border-radius:999px;color:var(--text)!important}
+    .hero{min-height:78vh;display:grid;align-items:center;position:relative;overflow:hidden}
+    .hero:before{content:"";position:absolute;inset:-20%;background:
+      linear-gradient(115deg,transparent 45%,rgba(215,179,106,.08) 45.5%,transparent 46%),
+      linear-gradient(25deg,transparent 55%,rgba(255,255,255,.035) 55.5%,transparent 56%);
+      transform:scale(1.3)}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:end;position:relative}
+    .eyebrow{font-size:13px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase;margin-bottom:18px}
+    h1{font-size:clamp(42px,7vw,84px);line-height:1.06;letter-spacing:-.04em;margin:0 0 24px}
+    .lead{max-width:680px;font-size:18px;color:#c9d1d7}
+    .hero-card{border-top:1px solid var(--accent);padding-top:24px;color:var(--muted)}
+    .hero-card strong{display:block;color:var(--text);font-size:18px;margin-bottom:8px}
+    .cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;padding:14px 20px;border-radius:8px;font-weight:700}
+    .btn.primary{background:var(--accent);color:#12171c}
+    .btn.secondary{border:1px solid var(--line);background:#101922}
+    section{padding:96px 0;border-top:1px solid rgba(255,255,255,.07)}
+    .section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;margin-bottom:46px}
+    .section-head h2{margin:0;font-size:clamp(30px,4vw,46px);line-height:1.2}
+    .section-head p{margin:0;color:var(--muted)}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .card{background:var(--panel);border:1px solid var(--line);padding:30px;border-radius:14px}
+    .num{font-size:12px;color:var(--accent);letter-spacing:.15em}
+    .card h3{margin:10px 0 8px;font-size:22px}
+    .card p{color:var(--muted);margin:0}
+    .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+    .step{background:var(--panel);padding:28px}
+    .step b{display:block;margin:8px 0}
+    .step span{color:var(--muted);font-size:14px}
+    .predev{background:var(--paper);color:var(--ink)}
+    .predev .section-head p{color:#59626a}
+    .predev-box{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .predev-card{border:1px solid #cfc8ba;padding:28px;border-radius:14px;background:#fff}
+    .predev-card h3{margin-top:0}
+    .predev-card p{color:#59626a}
+    .company{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+    dl{margin:0}
+    .row{display:grid;grid-template-columns:120px 1fr;padding:16px 0;border-bottom:1px solid var(--line)}
+    dt{color:var(--muted)}
+    dd{margin:0}
+    .notice{border:1px dashed #52606c;padding:24px;border-radius:12px;color:var(--muted)}
+    footer{padding:34px 0;color:#7f8b94;font-size:13px;border-top:1px solid rgba(255,255,255,.07)}
+    @media(max-width:800px){
+      .links a:not(.tel){display:none}
+      .hero{min-height:auto;padding:90px 0 70px}
+      .hero-grid,.section-head,.company,.predev-box{grid-template-columns:1fr;gap:28px}
+      .hero-card{max-width:520px}
+      .cards{grid-template-columns:1fr}
+      .flow{grid-template-columns:1fr}
+      section{padding:70px 0}
+      .row{grid-template-columns:1fr;gap:4px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"GeneralContractor",
+    "name":"株式会社藤井土木",
+    "address":{
+      "@type":"PostalAddress",
+      "postalCode":"132-0024",
+      "addressRegion":"東京都",
+      "addressLocality":"江戸川区",
+      "streetAddress":"一之江7丁目15-2"
+    },
+    "telephone":"03-3674-3971",
+    "areaServed":"東京都および周辺地域",
+    "knowsAbout":["解体工事","とび・土工工事"]
+  }
+  </script>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#top"><span class="mark"></span><span>株式会社藤井土木</span></a>
+      <div class="links">
+        <a href="#services">事業内容</a><a href="#works">施工実績</a><a href="#flow">ご相談の流れ</a><a href="#company">会社情報</a>
+        <a class="tel" href="tel:0336743971">03-3674-3971</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Edogawa / Ichinoe · Demolition & Construction</div>
+          <h1>壊す仕事を、<br>次の計画につなぐ。</h1>
+          <p class="lead">東京都江戸川区一之江を拠点に、解体工事・とび土工のご相談を承ります。建替え前の解体、現地確認、工事に関する初期相談もお気軽にお問い合わせください。</p>
+          <div class="cta">
+            <a class="btn primary" href="tel:0336743971">電話で相談する</a>
+            <a class="btn secondary" href="#predev">建替え前の相談を見る</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <strong>まだ計画が固まっていなくても。</strong>
+          建替え・既存建物の解体・土地活用など、最初に何から確認すべきか分からない段階でも、必要事項を整理する入口を目指します。
+        </div>
+      </div>
+    </header>
+
+    <section style="padding:28px 0;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)">
+      <div class="wrap" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden">
+        <div class="step"><span>建設業許可</span><b>東京都 第093544号</b></div>
+        <div class="step"><span>資本金</span><b>1,000万円</b></div>
+        <div class="step"><span>公開確認実績</span><b>7件</b></div>
+        <div class="step"><span>拠点</span><b>江戸川区 一之江</b></div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Services</div><h2>対応内容</h2></div>
+          <p>公開情報で確認できる事業内容を中心に構成した仮ページです。実際の対応工種・エリア・保有資格・設備等は、公開前に会社確認のうえ追記します。</p>
+        </div>
+        <div class="cards">
+          <article class="card"><span class="num">01</span><h3>解体工事</h3><p>建替えや土地活用に伴う既存建物の解体。公開実績では木造、木造・鉄骨造、鉄骨造3階建て等の案件が確認できます。</p></article>
+          <article class="card"><span class="num">02</span><h3>とび・土工工事</h3><p>公開されている建設業情報上、とび・土工工事に対応。具体的な施工範囲・体制は会社確認のうえ正式掲載します。</p></article>
+          <article class="card"><span class="num">03</span><h3>建替え前の初期相談</h3><p>既存建物がある土地での建替えを検討中の方へ。解体側で先に確認すべき条件を整理する上流相談を将来サービスとして想定しています。</p></article>
+          <article class="card"><span class="num">04</span><h3>現地確認・見積相談</h3><p>建物種別、周辺道路、搬出動線、近隣環境などを確認し、見積に必要な情報を整理します。</p></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="works">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Selected Works</div><h2>公開情報で確認できる施工実績</h2></div>
+          <p>解体DXが解体看板情報等から独自調査した公開データをもとにした参考表示です。正式な施工実績ページでは、会社確認後に写真・工期・工法・担当範囲を追加します。</p>
+        </div>
+        <div style="overflow:auto;border:1px solid var(--line);border-radius:14px">
+          <table style="width:100%;border-collapse:collapse;min-width:720px;background:var(--panel)">
+            <thead><tr>
+              <th style="text-align:left;padding:16px;border-bottom:1px solid var(--line)">着工日</th>
+              <th style="text-align:left;padding:16px;border-bottom:1px solid var(--line)">場所</th>
+              <th style="text-align:left;padding:16px;border-bottom:1px solid var(--line)">構造</th>
+              <th style="text-align:left;padding:16px;border-bottom:1px solid var(--line)">床面積</th>
+            </tr></thead>
+            <tbody style="color:var(--muted)">
+              <tr><td style="padding:16px;border-bottom:1px solid var(--line)">2026-07-27</td><td style="padding:16px;border-bottom:1px solid var(--line)">台東区入谷1丁目</td><td style="padding:16px;border-bottom:1px solid var(--line)">—</td><td style="padding:16px;border-bottom:1px solid var(--line)">—</td></tr>
+              <tr><td style="padding:16px;border-bottom:1px solid var(--line)">2026-02-06</td><td style="padding:16px;border-bottom:1px solid var(--line)">江戸川区松江3丁目</td><td style="padding:16px;border-bottom:1px solid var(--line)">木造2階</td><td style="padding:16px;border-bottom:1px solid var(--line)">112.4㎡</td></tr>
+              <tr><td style="padding:16px;border-bottom:1px solid var(--line)">2025-12-01</td><td style="padding:16px;border-bottom:1px solid var(--line)">中央区東日本橋2丁目</td><td style="padding:16px;border-bottom:1px solid var(--line)">—</td><td style="padding:16px;border-bottom:1px solid var(--line)">—</td></tr>
+              <tr><td style="padding:16px;border-bottom:1px solid var(--line)">2025-09-08</td><td style="padding:16px;border-bottom:1px solid var(--line)">江戸川区船堀3丁目</td><td style="padding:16px;border-bottom:1px solid var(--line)">木造 / 鉄骨造</td><td style="padding:16px;border-bottom:1px solid var(--line)">105.0㎡</td></tr>
+              <tr><td style="padding:16px">2024-04-15</td><td style="padding:16px">江戸川区中葛西5丁目</td><td style="padding:16px">鉄骨造3階</td><td style="padding:16px">855.0㎡</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Process</div><h2>相談から工事まで</h2></div>
+          <p>まずは電話で概要をお知らせください。必要な確認事項を整理し、現地確認・見積へ進みます。</p>
+        </div>
+        <div class="flow">
+          <div class="step"><span>STEP 01</span><b>ご相談</b><span>建物・場所・時期など、分かる範囲で。</span></div>
+          <div class="step"><span>STEP 02</span><b>現地確認</b><span>工事条件・周辺環境・搬出動線等を確認。</span></div>
+          <div class="step"><span>STEP 03</span><b>お見積り</b><span>確認内容をもとに工事条件を整理。</span></div>
+          <div class="step"><span>STEP 04</span><b>工事</b><span>契約・工程確認後に施工へ。</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="predev" class="predev">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow" style="color:#846c3e">Before Construction</div><h2>建てる前から、相談できる入口へ。</h2></div>
+          <p>このセクションは今後の事業拡張案です。土地や古い建物を持っているが、建替え・売却・活用の方向がまだ固まっていない方の相談を受け、必要に応じて建築・不動産などの専門家へつなぐ構想です。</p>
+        </div>
+        <div class="predev-box">
+          <article class="predev-card"><h3>こんな段階でも</h3><p>「古い建物をどうするか決まっていない」「建替えたいが何から始めればいいか分からない」「解体費を含めた全体像を知りたい」など。</p></article>
+          <article class="predev-card"><h3>専門家へつなぐ</h3><p>設計・施工・不動産・資金など、必要な専門領域を整理し、適切な専門家へ接続する仕組みを将来的に追加できます。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="company">
+      <div class="wrap company">
+        <div>
+          <div class="eyebrow">Company</div><h2 style="font-size:40px;margin-top:0">会社情報</h2>
+          <dl>
+            <div class="row"><dt>会社名</dt><dd>株式会社藤井土木</dd></div>
+            <div class="row"><dt>代表者</dt><dd>藤井 政司</dd></div>
+            <div class="row"><dt>所在地</dt><dd>〒132-0024 東京都江戸川区一之江7丁目15-2</dd></div>
+            <div class="row"><dt>電話</dt><dd><a href="tel:0336743971">03-3674-3971</a></dd></div>
+            <div class="row"><dt>建設業許可</dt><dd>東京都 第093544号（一般）</dd></div>
+            <div class="row"><dt>資本金</dt><dd>1,000万円</dd></div>
+            <div class="row"><dt>法人番号</dt><dd>8011701009833</dd></div>
+            <div class="row"><dt>主な工種</dt><dd>解体工事／とび・土工工事</dd></div>
+          </dl>
+        </div>
+        <div class="notice">
+          <strong style="color:var(--text)">公開前に会社確認が必要な項目</strong><br><br>
+          代表者名／創業・設立年／資本金／建設業許可番号の正式表記／対応エリア／施工可能な構造・規模／保有重機／産廃関連許可／アスベスト対応範囲／施工実績写真／採用情報／FAX・メール／営業時間／プライバシーポリシー／問い合わせフォーム送信先。
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 株式会社藤井土木 — Prototype. 公開前に会社確認・承認が必要です。</div>
+  </footer>
+</body>
+</html>

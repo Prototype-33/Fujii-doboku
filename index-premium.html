@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>株式会社藤井土木｜解体・とび土工｜東京都江戸川区一之江</title>
+  <meta name="description" content="東京都江戸川区一之江の株式会社藤井土木。解体工事・とび土工。建替え前の初期相談から現地確認、解体工事まで。">
+  <meta name="theme-color" content="#0b0e11">
+  <style>
+    :root{
+      --bg:#0b0e11;
+      --bg-2:#11161b;
+      --panel:#151b21;
+      --panel-2:#192129;
+      --text:#f6f3ec;
+      --muted:#a8b0b6;
+      --line:rgba(255,255,255,.11);
+      --gold:#c7a86a;
+      --gold-2:#e0c58f;
+      --paper:#efece4;
+      --ink:#15191d;
+      --max:1240px;
+      --radius:18px;
+      --shadow:0 24px 80px rgba(0,0,0,.34);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.75;
+      letter-spacing:.01em;
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 28px}
+    .nav{
+      position:sticky;top:0;z-index:40;
+      background:rgba(11,14,17,.82);
+      backdrop-filter:blur(16px);
+      border-bottom:1px solid var(--line);
+    }
+    .navin{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .brand{display:flex;align-items:center;gap:14px;text-decoration:none;font-weight:800;letter-spacing:.08em}
+    .brandmark{width:34px;height:34px;border:1px solid var(--gold);position:relative;transform:rotate(45deg)}
+    .brandmark:before,.brandmark:after{content:"";position:absolute;background:var(--gold)}
+    .brandmark:before{width:12px;height:1px;left:10px;top:16px}
+    .brandmark:after{height:12px;width:1px;left:16px;top:10px}
+    .links{display:flex;align-items:center;gap:24px;font-size:13px;color:#c5ccd1}
+    .links a{text-decoration:none}
+    .links a:hover{color:#fff}
+    .tel{border:1px solid rgba(199,168,106,.55);padding:10px 16px;border-radius:999px;color:#fff!important}
+    .hero{
+      position:relative;
+      min-height:86vh;
+      display:grid;
+      align-items:end;
+      overflow:hidden;
+      border-bottom:1px solid var(--line);
+    }
+    .hero:before{
+      content:"";
+      position:absolute;inset:0;
+      background:
+        radial-gradient(circle at 78% 26%, rgba(199,168,106,.12), transparent 28%),
+        linear-gradient(135deg, rgba(255,255,255,.025), transparent 40%),
+        linear-gradient(180deg, rgba(8,10,12,.05), rgba(8,10,12,.72));
+      pointer-events:none;
+    }
+    .gridlines{
+      position:absolute;inset:0;opacity:.18;pointer-events:none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+      background-size:80px 80px;
+      mask-image:linear-gradient(to bottom,rgba(0,0,0,.8),transparent 85%);
+    }
+    .beam{
+      position:absolute;right:-10%;top:8%;width:58%;height:120%;
+      border-left:1px solid rgba(199,168,106,.24);
+      transform:rotate(18deg);
+      box-shadow:-60px 0 100px rgba(199,168,106,.02);
+    }
+    .hero-content{position:relative;z-index:2;padding:140px 0 72px}
+    .eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2);margin-bottom:20px}
+    h1{
+      margin:0;
+      font-size:clamp(46px,8vw,104px);
+      line-height:.98;
+      letter-spacing:-.055em;
+      font-weight:760;
+      max-width:980px;
+    }
+    .hero-sub{
+      max-width:690px;
+      margin:28px 0 0;
+      font-size:18px;
+      color:#cbd2d6;
+    }
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      min-height:50px;padding:0 20px;border-radius:10px;
+      text-decoration:none;font-weight:700;font-size:14px;
+    }
+    .btn.primary{background:var(--gold);color:#111}
+    .btn.secondary{border:1px solid var(--line);background:rgba(255,255,255,.025)}
+    .proof{
+      margin-top:72px;
+      display:grid;grid-template-columns:repeat(4,1fr);
+      border-top:1px solid var(--line);border-left:1px solid var(--line);
+    }
+    .proof-item{padding:22px 18px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.015)}
+    .proof-item span{display:block;font-size:11px;color:#8f9aa1;letter-spacing:.1em;text-transform:uppercase}
+    .proof-item b{display:block;margin-top:6px;font-size:17px}
+    section{padding:104px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:end;margin-bottom:46px}
+    .section-head h2{font-size:clamp(34px,4.5vw,56px);line-height:1.08;margin:0}
+    .section-head p{margin:0;color:var(--muted);max-width:760px}
+    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .card{
+      background:linear-gradient(180deg,var(--panel),#11171c);
+      border:1px solid var(--line);border-radius:var(--radius);padding:34px;
+      box-shadow:0 8px 28px rgba(0,0,0,.12);
+    }
+    .card small{color:var(--gold-2);letter-spacing:.16em}
+    .card h3{font-size:24px;margin:10px 0 8px}
+    .card p{color:var(--muted);margin:0}
+    .works-wrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+    table{width:100%;border-collapse:collapse;min-width:760px;background:#10151a}
+    th,td{padding:18px 20px;text-align:left;border-bottom:1px solid var(--line)}
+    th{font-size:12px;color:#929ca4;letter-spacing:.08em;text-transform:uppercase}
+    td{color:#d8dde0}
+    .featured{
+      display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px
+    }
+    .feature{
+      min-height:320px;border-radius:var(--radius);border:1px solid var(--line);position:relative;overflow:hidden;background:
+      linear-gradient(145deg,rgba(199,168,106,.11),transparent 38%),
+      linear-gradient(180deg,#182027,#10151a);
+      padding:34px;display:flex;flex-direction:column;justify-content:flex-end
+    }
+    .feature:before{
+      content:"REAL PROJECT PHOTO";
+      position:absolute;inset:24px 24px auto auto;
+      font-size:10px;letter-spacing:.18em;color:rgba(255,255,255,.25)
+    }
+    .feature h3{font-size:26px;margin:0 0 8px}
+    .feature p{margin:0;color:var(--muted)}
+    .predev{background:var(--paper);color:var(--ink)}
+    .predev .eyebrow{color:#826d42}
+    .predev .section-head p{color:#596168}
+    .predev-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .light-card{background:#f8f6f1;border:1px solid #d4cdbf;border-radius:var(--radius);padding:32px}
+    .light-card h3{margin:0 0 10px;font-size:24px}
+    .light-card p{margin:0;color:#5d6469}
+    .flow{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+    .step{padding:30px;background:#11171c;border-right:1px solid var(--line)}
+    .step:last-child{border-right:0}
+    .step span{display:block;font-size:11px;color:#87929a;letter-spacing:.12em}
+    .step b{display:block;margin:10px 0;font-size:20px}
+    .step p{margin:0;color:var(--muted);font-size:14px}
+    .company{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+    .row{display:grid;grid-template-columns:130px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid var(--line)}
+    dt{color:#929ca4}
+    dd{margin:0}
+    .trust{
+      border:1px solid var(--line);border-radius:var(--radius);padding:30px;background:#11171c
+    }
+    .trust h3{margin-top:0;font-size:22px}
+    .trust p{color:var(--muted)}
+    .cta-band{
+      border-bottom:0;
+      background:
+        radial-gradient(circle at 80% 20%,rgba(199,168,106,.12),transparent 30%),
+        #0d1115;
+    }
+    .cta-band .inner{display:flex;justify-content:space-between;gap:40px;align-items:center}
+    .cta-band h2{margin:0;font-size:clamp(32px,5vw,58px);line-height:1.06}
+    footer{padding:34px 0;color:#7e8991;font-size:13px;border-top:1px solid var(--line)}
+    @media(max-width:900px){
+      .links a:not(.tel){display:none}
+      .hero{min-height:auto}
+      .hero-content{padding:110px 0 56px}
+      .proof,.cards,.featured,.predev-grid,.flow,.company,.section-head{grid-template-columns:1fr}
+      .proof{border-left:1px solid var(--line)}
+      .step{border-right:0;border-bottom:1px solid var(--line)}
+      .section-head{gap:24px}
+      .cta-band .inner{display:block}
+      .cta-band .btn{margin-top:24px}
+      .row{grid-template-columns:1fr;gap:4px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#top"><span class="brandmark"></span><span>株式会社藤井土木</span></a>
+      <div class="links">
+        <a href="#services">事業内容</a>
+        <a href="#works">施工実績</a>
+        <a href="#predev">建替え前相談</a>
+        <a href="#company">会社情報</a>
+        <a class="tel" href="tel:0336743971">03-3674-3971</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <header class="hero">
+      <div class="gridlines"></div><div class="beam"></div>
+      <div class="wrap hero-content">
+        <div class="eyebrow">Demolition / Civil Works / Edogawa, Tokyo</div>
+        <h1>壊すことから、<br>次をつくる。</h1>
+        <p class="hero-sub">東京都江戸川区一之江を拠点に、解体工事・とび土工を行う株式会社藤井土木。建替え前の初期相談から現地確認、施工まで、次の計画へつながる解体を。</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="tel:0336743971">工事について相談する</a>
+          <a class="btn secondary" href="#works">施工実績を見る</a>
+        </div>
+        <div class="proof">
+          <div class="proof-item"><span>License</span><b>東京都 第093544号</b></div>
+          <div class="proof-item"><span>Capital</span><b>1,000万円</b></div>
+          <div class="proof-item"><span>Public Works Data</span><b>公開確認実績 7件</b></div>
+          <div class="proof-item"><span>Base</span><b>江戸川区 一之江</b></div>
+        </div>
+      </div>
+    </header>
+
+    <section id="services">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Services</div><h2>現場力を、<br>発注者の安心へ。</h2></div>
+          <p>法人・個人を問わず、既存建物の解体や建替えに伴う工事を相談できる入口を整えます。対応工種・保有重機・施工可能規模などは、会社確認後に正式情報へ更新します。</p>
+        </div>
+        <div class="cards">
+          <article class="card"><small>01 / DEMOLITION</small><h3>解体工事</h3><p>木造・鉄骨造等の解体実績が公開情報で確認されています。建替え前の解体から現地確認まで。</p></article>
+          <article class="card"><small>02 / CIVIL WORKS</small><h3>とび・土工工事</h3><p>公開建設業情報上、とび・土工工事に対応。具体的な施工範囲・体制は案件条件に応じて確認します。</p></article>
+          <article class="card"><small>03 / PRE-DEVELOPMENT</small><h3>建替え前の初期相談</h3><p>まだ計画が固まっていない段階でも、既存建物・解体条件・次に必要な専門家を整理する入口へ。</p></article>
+          <article class="card"><small>04 / SITE CHECK</small><h3>現地確認・見積相談</h3><p>建物種別、道路条件、搬出動線、近隣環境など、工事計画に必要な条件を確認します。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Selected Works</div><h2>施工実績を、<br>信用に変える。</h2></div>
+          <p>下記は公開情報で確認できる実績の一部です。正式公開版では、会社確認後に実際の現場写真、工期、難所、対応内容を加え、発注者が施工能力を判断できるページへ発展させます。</p>
+        </div>
+        <div class="works-wrap">
+          <table>
+            <thead><tr><th>着工</th><th>場所</th><th>構造</th><th>床面積</th></tr></thead>
+            <tbody>
+              <tr><td>2026-07-27</td><td>台東区入谷1丁目</td><td>—</td><td>—</td></tr>
+              <tr><td>2026-02-06</td><td>江戸川区松江3丁目</td><td>木造2階</td><td>112.4㎡</td></tr>
+              <tr><td>2025-12-01</td><td>中央区東日本橋2丁目</td><td>—</td><td>—</td></tr>
+              <tr><td>2025-09-08</td><td>江戸川区船堀3丁目</td><td>木造 / 鉄骨造</td><td>105.0㎡</td></tr>
+              <tr><td>2024-04-15</td><td>江戸川区中葛西5丁目</td><td>鉄骨造3階</td><td>855.0㎡</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="featured">
+          <article class="feature"><h3>実現場写真をHeroへ</h3><p>重機だけではなく、養生・近隣対応・打合せ・完工状態まで見せると法人発注者への信頼が上がります。</p></article>
+          <article class="feature"><h3>難しい現場ほど事例化</h3><p>狭小道路、隣接建物、搬出制約などを「どう解決したか」まで説明すると、価格以外の選定理由になります。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="predev" class="predev">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Before Construction</div><h2>まだ建てるものが<br>決まっていなくても。</h2></div>
+          <p>将来的には、土地や既存建物を持つ方の初期相談を受け、建築士・施工会社・不動産など必要な専門家へつなぐ上流サービスへ拡張できます。</p>
+        </div>
+        <div class="predev-grid">
+          <article class="light-card"><h3>建替え・土地活用の入口</h3><p>何を建てるか、売却か活用か、予算や時期がまだ曖昧でも相談内容を整理し、次に必要な判断へつなげます。</p></article>
+          <article class="light-card"><h3>解体だけで終わらない関係</h3><p>建築会社・設計事務所・不動産会社との接続を蓄積し、案件が発生する上流から関係をつくります。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="flow">
+      <div class="wrap">
+        <div class="section-head">
+          <div><div class="eyebrow">Process</div><h2>相談から工事まで。</h2></div>
+          <p>最初からすべて決まっている必要はありません。現場条件を確認しながら、必要な情報を整理して進めます。</p>
+        </div>
+        <div class="flow">
+          <div class="step"><span>STEP 01</span><b>相談</b><p>場所・建物・時期など分かる範囲で。</p></div>
+          <div class="step"><span>STEP 02</span><b>現地確認</b><p>道路・搬出・周辺条件を確認。</p></div>
+          <div class="step"><span>STEP 03</span><b>見積・計画</b><p>条件を整理し、工事内容を明確化。</p></div>
+          <div class="step"><span>STEP 04</span><b>施工</b><p>契約・工程確認後に工事へ。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="company">
+      <div class="wrap company">
+        <div>
+          <div class="eyebrow">Company</div>
+          <h2 style="font-size:48px;line-height:1.1;margin-top:0">株式会社藤井土木</h2>
+          <dl>
+            <div class="row"><dt>代表者</dt><dd>藤井 政司</dd></div>
+            <div class="row"><dt>所在地</dt><dd>〒132-0024 東京都江戸川区一之江7丁目15-2</dd></div>
+            <div class="row"><dt>電話</dt><dd><a href="tel:0336743971">03-3674-3971</a></dd></div>
+            <div class="row"><dt>建設業許可</dt><dd>東京都 第093544号（一般）</dd></div>
+            <div class="row"><dt>資本金</dt><dd>1,000万円</dd></div>
+            <div class="row"><dt>法人番号</dt><dd>8011701009833</dd></div>
+          </dl>
+        </div>
+        <aside class="trust">
+          <h3>Trust Pack / 公開前確認</h3>
+          <p>正式版では、会社確認済みの許可、保険、施工対応範囲、保有重機、アスベスト対応、産廃、施工写真、安全管理、近隣対応などを一つの信用ページにまとめます。</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="wrap inner">
+        <div>
+          <div class="eyebrow">Contact</div>
+          <h2>解体・建替えの相談を、<br>最初の一歩から。</h2>
+        </div>
+        <a class="btn primary" href="tel:0336743971">03-3674-3971</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">© 株式会社藤井土木 — Premium Prototype / 公開前に会社確認・承認が必要です。</div>
+  </footer>
+</body>
+</html>

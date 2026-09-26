@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090c0f">
+<title>株式会社藤井土木｜Premium Motion Prototype</title>
+<meta name="description" content="株式会社藤井土木 プレミアム・モーション版プロトタイプ。解体・建替え前相談・パートナーネットワーク。">
+<style>
+:root{
+  --bg:#090c0f;--bg2:#0e1318;--panel:#121920;--panel2:#182129;
+  --text:#f4f0e8;--muted:#9eabb4;--line:rgba(255,255,255,.11);
+  --gold:#c7a86a;--gold2:#e5ce9c;--ink:#11151a;--paper:#eeeae0;
+  --max:1260px;--r:20px;--shadow:0 32px 100px rgba(0,0,0,.36)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;line-height:1.72;letter-spacing:.01em;overflow-x:hidden}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:auto;padding:0 28px}
+.nav{position:fixed;inset:0 0 auto;z-index:50;background:rgba(9,12,15,.70);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{height:74px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;font-weight:780;letter-spacing:.08em}
+.mark{width:34px;height:34px;border:1px solid var(--gold);position:relative;transform:rotate(45deg)}
+.mark:before,.mark:after{content:"";position:absolute;background:var(--gold)}
+.mark:before{width:12px;height:1px;left:10px;top:16px}
+.mark:after{width:1px;height:12px;left:16px;top:10px}
+.links{display:flex;gap:22px;align-items:center;color:#c3ccd2;font-size:13px}
+.links a{text-decoration:none}
+.pill{border:1px solid rgba(199,168,106,.55);padding:9px 14px;border-radius:999px}
+.lang{display:flex;gap:5px;border:1px solid var(--line);border-radius:999px;padding:4px}
+.lang button{border:0;background:transparent;color:#aab4ba;border-radius:999px;padding:6px 9px;font-size:11px;cursor:pointer}
+.lang button.active{background:#f0eadf;color:#111}
+.hero{min-height:100svh;position:relative;display:grid;align-items:end;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-bg{position:absolute;inset:0;background:
+  radial-gradient(circle at 72% 21%,rgba(199,168,106,.14),transparent 25%),
+  radial-gradient(circle at 23% 61%,rgba(80,107,124,.13),transparent 28%),
+  linear-gradient(180deg,#0a0e12,#090c0f 72%)}
+.grid{position:absolute;inset:-20%;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:88px 88px;transform:perspective(700px) rotateX(64deg) translateY(36%);transform-origin:center 70%;animation:gridDrift 18s linear infinite;opacity:.6;mask-image:linear-gradient(to bottom,transparent 8%,#000 42%,transparent 94%)}
+@keyframes gridDrift{to{background-position:0 88px,88px 0}}
+.orbit{position:absolute;border:1px solid rgba(199,168,106,.16);border-radius:50%;width:680px;height:680px;right:-170px;top:70px;animation:spin 32s linear infinite}
+.orbit:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--gold);top:75px;left:150px;box-shadow:0 0 28px rgba(199,168,106,.8)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero-photo{
+  position:absolute;right:6vw;top:16vh;width:min(44vw,620px);aspect-ratio:4/5;border-radius:28px;overflow:hidden;border:1px solid rgba(255,255,255,.12);
+  background:
+    linear-gradient(180deg,rgba(7,10,13,.05),rgba(7,10,13,.82)),
+    radial-gradient(circle at 65% 28%,rgba(232,205,151,.22),transparent 18%),
+    linear-gradient(145deg,#26313a 0 30%,#161e25 30% 46%,#3b3127 46% 51%,#12181e 51% 70%,#2a3338 70%);
+  box-shadow:var(--shadow);transform:rotate(2deg)
+}
+.hero-photo:after{content:"IMAGE SLOT / REAL PROJECT OR LICENSED BRAND VISUAL";position:absolute;left:22px;bottom:20px;font-size:10px;letter-spacing:.17em;color:rgba(255,255,255,.45)}
+.hero-photo .machine{position:absolute;left:18%;bottom:12%;width:60%;height:28%;border:1px solid rgba(230,205,155,.45);clip-path:polygon(0 69%,18% 40%,49% 50%,63% 0,75% 0,74% 46%,100% 64%,95% 100%,8% 100%);background:linear-gradient(135deg,rgba(199,168,106,.18),rgba(255,255,255,.02))}
+.hero-content{position:relative;z-index:3;padding:150px 0 70px}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);margin-bottom:20px}
+h1{font-size:clamp(50px,8vw,106px);line-height:.96;letter-spacing:-.06em;margin:0;max-width:850px}
+.lead{font-size:18px;color:#c8d0d5;max-width:650px;margin:28px 0 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 20px;border-radius:11px;text-decoration:none;font-weight:730;font-size:14px}
+.primary{background:var(--gold);color:#111}
+.secondary{border:1px solid var(--line);background:rgba(255,255,255,.025)}
+.hero-proof{margin-top:70px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:16px;overflow:hidden;max-width:870px;background:rgba(12,16,20,.64);backdrop-filter:blur(10px)}
+.hero-proof div{padding:20px;border-right:1px solid var(--line)}
+.hero-proof div:last-child{border-right:0}
+.hero-proof small{display:block;color:#8f9ba3;font-size:10px;letter-spacing:.13em;text-transform:uppercase}
+.hero-proof b{display:block;margin-top:6px;font-size:16px}
+section{padding:110px 0;border-bottom:1px solid var(--line)}
+.head{display:grid;grid-template-columns:.78fr 1.22fr;gap:70px;align-items:end;margin-bottom:50px}
+.head h2{font-size:clamp(36px,4.8vw,60px);line-height:1.05;margin:0;letter-spacing:-.035em}
+.head p{margin:0;color:var(--muted);max-width:760px}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .75s cubic-bezier(.2,.75,.25,1),transform .75s cubic-bezier(.2,.75,.25,1)}
+.reveal.on{opacity:1;transform:none}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:var(--r);padding:34px;background:linear-gradient(180deg,var(--panel),#10161b);min-height:235px;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(199,168,106,.12);border-radius:50%;right:-70px;top:-70px}
+.card small{color:var(--gold2);letter-spacing:.15em}
+.card h3{font-size:24px;margin:10px 0 8px}
+.card p{color:var(--muted);margin:0}
+.demo{background:var(--paper);color:var(--ink);position:relative;overflow:hidden}
+.demo .eyebrow{color:#856d41}.demo .head p{color:#5a6369}
+.pipeline{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:18px}
+.pipeline:before{content:"";position:absolute;height:1px;background:#c7b995;left:9%;right:9%;top:43px;z-index:0}
+.node{position:relative;z-index:1;background:#f9f7f2;border:1px solid #d6cec0;border-radius:16px;padding:24px;min-height:164px;box-shadow:0 10px 35px rgba(42,37,29,.05)}
+.node .dot{width:38px;height:38px;background:#ece2cc;border:1px solid #c8b27d;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:800;margin-bottom:18px}
+.node h3{font-size:17px;margin:0 0 8px}.node p{font-size:13px;color:#677077;margin:0}
+.runner{position:absolute;top:36px;left:8%;width:14px;height:14px;background:#9d7c3e;border-radius:50%;z-index:3;box-shadow:0 0 0 7px rgba(157,124,62,.14);animation:run 6s ease-in-out infinite}
+@keyframes run{0%,5%{left:8%}23%{left:28%}43%{left:48%}63%{left:68%}83%,100%{left:88%}}
+.demo-panel{margin-top:24px;border:1px solid #d5cdbf;background:#fff;border-radius:18px;padding:26px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.demo-screen{border:1px solid #dfd9ce;border-radius:14px;padding:20px;background:#f7f5f0}
+.chat{display:grid;gap:10px}
+.bubble{padding:11px 13px;border-radius:12px;background:#ebe7df;font-size:13px;max-width:84%}
+.bubble.ai{background:#171c21;color:#f6f1e8;margin-left:auto}
+.status{font-size:12px;color:#6e777c;margin-bottom:12px}
+.route{display:flex;flex-wrap:wrap;gap:8px}
+.tag{border:1px solid #cfc7b8;border-radius:999px;padding:8px 10px;font-size:12px}
+.partner-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.partner{border:1px solid var(--line);border-radius:var(--r);padding:30px;background:#11171c}
+.partner h3{font-size:22px;margin:10px 0}.partner p{color:var(--muted);margin:0}
+.international{background:linear-gradient(135deg,#101821,#0b0f13)}
+.intl-box{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.lang-card{border:1px solid var(--line);border-radius:var(--r);padding:34px;background:linear-gradient(180deg,#161f27,#0f151a)}
+.lang-card h3{font-size:26px;margin:0 0 12px}.lang-card p{color:var(--muted)}
+.works{overflow:auto;border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}
+table{width:100%;border-collapse:collapse;min-width:720px;background:#10161b}
+th,td{padding:18px 20px;text-align:left;border-bottom:1px solid var(--line)}
+th{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#87949d}
+td{color:#d9dee1}
+.company{display:grid;grid-template-columns:1fr 1fr;gap:58px}
+.row{display:grid;grid-template-columns:135px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+dt{color:#8e99a1}dd{margin:0}
+.cta{background:radial-gradient(circle at 82% 32%,rgba(199,168,106,.13),transparent 28%),#0c1014;border-bottom:0}
+.cta .inner{display:flex;justify-content:space-between;align-items:center;gap:40px}
+.cta h2{font-size:clamp(36px,5.8vw,70px);line-height:1;margin:0;letter-spacing:-.045em}
+footer{padding:32px 0;color:#78858d;font-size:12px;border-top:1px solid var(--line)}
+@media(max-width:980px){
+  .links a:not(.pill),.hero-photo{display:none}
+  .hero{min-height:auto}.hero-content{padding:130px 0 60px}
+  .hero-proof,.cards,.head,.pipeline,.demo-panel,.partner-grid,.intl-box,.company{grid-template-columns:1fr}
+  .pipeline:before,.runner{display:none}
+  .hero-proof div{border-right:0;border-bottom:1px solid var(--line)}
+  .hero-proof div:last-child{border-bottom:0}
+  .head{gap:24px}.cta .inner{display:block}.cta .btn{margin-top:26px}
+  .row{grid-template-columns:1fr;gap:4px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap navin">
+    <a class="brand" href="#top"><span class="mark"></span><span>株式会社藤井土木</span></a>
+    <div class="links">
+      <a href="#services">事業内容</a><a href="#demo">建替え相談</a><a href="#partners">法人連携</a><a href="#international">中文</a>
+      <span class="lang"><button id="jpBtn" class="active">JP</button><button id="zhBtn">中文</button></span>
+      <a class="pill" href="tel:0336743971">03-3674-3971</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg"></div><div class="grid"></div><div class="orbit"></div>
+  <div class="hero-photo"><div class="machine"></div></div>
+  <div class="wrap hero-content">
+    <div class="eyebrow">Demolition / Civil Works / Project Connection</div>
+    <h1 data-jp="壊すことから、<br>次をつくる。" data-zh="从拆除开始，<br>连接下一步。">壊すことから、<br>次をつくる。</h1>
+    <p class="lead" data-jp="東京都江戸川区一之江を拠点に、解体工事・とび土工を行う株式会社藤井土木。建替え前の初期相談から現地確認、施工まで、次の計画へつながる解体を。" data-zh="株式会社藤井土木位于东京都江户川区一之江，提供拆除及相关土木工程服务。从改建前咨询、现场确认到施工，为下一步开发提供连接。">東京都江戸川区一之江を拠点に、解体工事・とび土工を行う株式会社藤井土木。建替え前の初期相談から現地確認、施工まで、次の計画へつながる解体を。</p>
+    <div class="actions"><a class="btn primary" href="tel:0336743971">工事について相談する</a><a class="btn secondary" href="#demo">構想デモを見る</a></div>
+    <div class="hero-proof">
+      <div><small>License</small><b>東京都 第093544号</b></div>
+      <div><small>Capital</small><b>1,000万円</b></div>
+      <div><small>Public Works Data</small><b>公開確認実績 7件</b></div>
+      <div><small>Base</small><b>江戸川区 一之江</b></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="services">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow">Services</div><h2>現場力を、<br>発注者の安心へ。</h2></div><p>施工能力だけではなく、発注者が判断しやすい情報、実績、工程、対応範囲へ翻訳する。公式サイトを名刺ではなく、信用と案件をつなぐ営業資産として設計します。</p></div>
+    <div class="cards">
+      <article class="card reveal"><small>01 / DEMOLITION</small><h3>解体工事</h3><p>木造・鉄骨造等の公開実績を確認。正式版では実写真、工期、難所、対応内容まで事例化します。</p></article>
+      <article class="card reveal"><small>02 / CIVIL WORKS</small><h3>とび・土工</h3><p>施工条件を整理し、価格だけではなく安全・工程・近隣対応を含めて信用材料へ。</p></article>
+      <article class="card reveal"><small>03 / PRE-DEVELOPMENT</small><h3>建替え前相談</h3><p>まだ構想が固まっていない所有者・事業者の相談を受け、必要な専門家へつなぐ入口を想定。</p></article>
+      <article class="card reveal"><small>04 / PARTNER NETWORK</small><h3>法人連携</h3><p>建築士、工務店、不動産会社等と相互送客し、解体案件が発生する上流から関係をつくります。</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="demo" id="demo">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow">Interactive Concept</div><h2>まだ案件になる前から、<br>流れをつくる。</h2></div><p>これは機能完成前でも見せられる「動く事業構想デモ」。相談内容をAIが整理し、人間が確認して専門家へ接続し、既存建物があれば解体へつなぐ流れを視覚化します。</p></div>
+    <div class="pipeline reveal">
+      <div class="runner"></div>
+      <article class="node"><div class="dot">01</div><h3>相談</h3><p>土地・建替え・事業アイデア</p></article>
+      <article class="node"><div class="dot">02</div><h3>AI整理</h3><p>不足情報・目的・条件を構造化</p></article>
+      <article class="node"><div class="dot">03</div><h3>専門家接続</h3><p>建築士 / 不動産 / 施工 / 資金</p></article>
+      <article class="node"><div class="dot">04</div><h3>解体</h3><p>既存建物があれば藤井土木へ</p></article>
+      <article class="node"><div class="dot">05</div><h3>次の建築</h3><p>案件を止めず次工程へ</p></article>
+    </div>
+    <div class="demo-panel reveal">
+      <div class="demo-screen">
+        <div class="status">AI PRE-INTAKE / DEMO</div>
+        <div class="chat">
+          <div class="bubble">築40年の建物があります。建替えか土地活用かまだ迷っています。</div>
+          <div class="bubble ai">既存建物・希望用途・時期・予算を整理します。正式判断は担当者と専門家が確認します。</div>
+          <div class="bubble">賃貸か店舗も検討中。融資も必要かもしれません。</div>
+        </div>
+      </div>
+      <div class="demo-screen">
+        <div class="status">ROUTING / DEMO</div>
+        <div class="route"><span class="tag">解体候補 ✓</span><span class="tag">建築士相談 ✓</span><span class="tag">収支検討 ✓</span><span class="tag">不動産相談</span><span class="tag">人間確認 required</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="partners">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow">Partner Network</div><h2>仕事を待つより、<br>仕事が生まれる場所へ。</h2></div><p>一件の施主を探し続けるより、年間複数案件が通過する上流パートナーとの関係を蓄積する。紹介を受けるだけでなく、こちらから案件を返せるネットワークを目指します。</p></div>
+    <div class="partner-grid">
+      <article class="partner reveal"><div class="eyebrow">Architects</div><h3>建築士・設計事務所</h3><p>建替え相談の初期段階。解体条件を早く見える化し、設計側の不確実性を減らす。</p></article>
+      <article class="partner reveal"><div class="eyebrow">Builders</div><h3>工務店・建設会社</h3><p>建築着工前の解体需要。空き工程・対応可能規模を見える形で共有。</p></article>
+      <article class="partner reveal"><div class="eyebrow">Real Estate</div><h3>不動産・オーナー</h3><p>売却、建替え、土地活用の判断前に既存建物のコストと条件を整理。</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="international" id="international">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow">International Access</div><h2>日本語だけで、<br>入口を閉じない。</h2></div><p>中国語対応は「中国人向けに何でもやる」ではなく、在日・海外オーナーや事業者が最初の相談を理解できる入口を作り、専門業務は適切な有資格者へ接続する設計が現実的です。</p></div>
+    <div class="intl-box">
+      <article class="lang-card reveal"><div class="eyebrow">中文咨询</div><h3>面向在日华人及海外业主</h3><p>拆除、改建、土地利用等初步咨询可先用中文整理。正式报价、设计、房地产交易及融资等由相应专业人员确认。</p></article>
+      <article class="lang-card reveal"><div class="eyebrow">Cross-border Partner</div><h3>中華圏の接点をPartner DBへ</h3><p>不動産、設計、施工、通訳、行政書士等を「紹介できる相手」として記録し、単発の知人関係ではなく会社資産へ変換します。</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="works">
+  <div class="wrap">
+    <div class="head reveal"><div><div class="eyebrow">Selected Works</div><h2>実績を、<br>選ばれる理由へ。</h2></div><p>公開情報で確認できる一部実績。正式版では本物の現場写真と、難しかった条件・対応内容・完工までのプロセスを追加します。</p></div>
+    <div class="works reveal">
+      <table>
+        <thead><tr><th>着工</th><th>場所</th><th>構造</th><th>床面積</th></tr></thead>
+        <tbody>
+          <tr><td>2026-07-27</td><td>台東区入谷1丁目</td><td>—</td><td>—</td></tr>
+          <tr><td>2026-02-06</td><td>江戸川区松江3丁目</td><td>木造2階</td><td>112.4㎡</td></tr>
+          <tr><td>2025-09-08</td><td>江戸川区船堀3丁目</td><td>木造 / 鉄骨造</td><td>105.0㎡</td></tr>
+          <tr><td>2024-04-15</td><td>江戸川区中葛西5丁目</td><td>鉄骨造3階</td><td>855.0㎡</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="company">
+  <div class="wrap company">
+    <div class="reveal">
+      <div class="eyebrow">Company</div><h2 style="font-size:48px;line-height:1.1;margin-top:0">株式会社藤井土木</h2>
+      <dl>
+        <div class="row"><dt>代表者</dt><dd>藤井 政司</dd></div>
+        <div class="row"><dt>所在地</dt><dd>〒132-0024 東京都江戸川区一之江7丁目15-2</dd></div>
+        <div class="row"><dt>電話</dt><dd><a href="tel:0336743971">03-3674-3971</a></dd></div>
+        <div class="row"><dt>建設業許可</dt><dd>東京都 第093544号（一般）</dd></div>
+        <div class="row"><dt>資本金</dt><dd>1,000万円</dd></div>
+        <div class="row"><dt>法人番号</dt><dd>8011701009833</dd></div>
+      </dl>
+    </div>
+    <aside class="card reveal"><small>TRUST PACK</small><h3>発注者が判断できる信用情報へ。</h3><p>正式版では許可、保険、施工範囲、保有設備、安全管理、近隣対応、産廃・アスベスト対応範囲などを会社確認後に集約します。</p></aside>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap inner reveal">
+    <div><div class="eyebrow">Contact</div><h2 data-jp="最初の相談から、<br>次の計画へ。" data-zh="从第一次咨询，<br>走向下一步计划。">最初の相談から、<br>次の計画へ。</h2></div>
+    <a class="btn primary" href="tel:0336743971">03-3674-3971</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 株式会社藤井土木 — Motion / Multilingual Prototype. 公開前に会社確認・承認が必要です。</div></footer>
+
+<script>
+const io=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')})
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+const jp=document.getElementById('jpBtn'), zh=document.getElementById('zhBtn');
+function setLang(lang){
+  document.documentElement.lang=lang==='zh'?'zh-CN':'ja';
+  document.querySelectorAll('[data-jp]').forEach(el=>el.innerHTML=el.dataset[lang]);
+  jp.classList.toggle('active',lang==='jp'); zh.classList.toggle('active',lang==='zh');
+}
+jp.addEventListener('click',()=>setLang('jp'));
+zh.addEventListener('click',()=>setLang('zh'));
+</script>
+</body>
+</html>
